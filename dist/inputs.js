@@ -1,4 +1,4 @@
-import { camera, scene, renderer } from "./setup";
+import { camera, scene, renderer } from "./setup.js";
 
 let activated = false;
 let camtype = "follow";

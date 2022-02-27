@@ -1,6 +1,6 @@
 import { GLTFLoader } from "https://cdn.skypack.dev/three/examples/jsm/loaders/GLTFLoader.js";
 import * as THREE from "https://cdn.skypack.dev/three";
-import { activated } from "./inputs";
+import { activated } from "./inputs.js";
 
 
 const loader = new GLTFLoader();

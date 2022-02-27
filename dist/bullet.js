@@ -1,6 +1,6 @@
 import { GLTFLoader } from "https://cdn.skypack.dev/three/examples/jsm/loaders/GLTFLoader.js";
 const loader = new GLTFLoader();
-import * as THREE from "three";
+import * as THREE from "https://cdn.skypack.dev/three";
 
 // make the bullet class
 export default class Bullet

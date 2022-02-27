@@ -2,15 +2,15 @@
 import * as THREE from "https://cdn.skypack.dev/three";
 
 // imports from my files
-import Boat from "./boat";
-import { sky, water } from "./bg";
-import { camera, scene, renderer } from "./setup";
-import { timetoshoot, camtype, processInput } from "./inputs";
-import { stats } from "./dev_ui";
-import Treasure from "./treasure";
-import Bullet from "./bullet";
-import Enemy from "./enemy";
-import Ebull from "./ebull";
+import Boat from "./boat.js";
+import { sky, water } from "./bg.js";
+import { camera, scene, renderer } from "./setup.js";
+import { timetoshoot, camtype, processInput } from "./inputs.js";
+import { stats } from "./dev_ui.js";
+import Treasure from "./treasure.js";
+import Bullet from "./bullet.js";
+import Enemy from "./enemy.js";
+import Ebull from "./ebull.js";
 
 // game data members
 let time;
