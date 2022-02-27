@@ -1,5 +1,5 @@
-import { GLTFLoader } from "https://cdn.skypack.dev/three/examples/jsm/loaders/GLTFLoader.js";
-import * as THREE from "https://cdn.skypack.dev/three";
+import { GLTFLoader } from "https://unpkg.com/three@0.138.0/examples/jsm/loaders/GLTFLoader.js";
+import * as THREE from "https://unpkg.com/three@0.138.0/build/three.module.js";
 import { activated } from "./inputs.js";
 
 

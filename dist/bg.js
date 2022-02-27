@@ -1,6 +1,6 @@
-import * as THREE from "https://cdn.skypack.dev/three";
-import { Water } from "https://cdn.skypack.dev/three/examples/jsm/objects/Water.js";
-import { Sky } from "https://cdn.skypack.dev/three/examples/jsm/objects/Sky.js";
+import * as THREE from "https://unpkg.com/three@0.138.0/build/three.module.js";
+import { Water } from "https://unpkg.com/three@0.138.0/examples/jsm/objects/Water.js";
+import { Sky } from "https://unpkg.com/three@0.138.0/examples/jsm/objects/Sky.js";
 
 let sun, water, sky;
 

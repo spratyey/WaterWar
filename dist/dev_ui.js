@@ -1,4 +1,4 @@
-import Stats from "https://cdn.skypack.dev/three/examples/jsm/libs/stats.module.js";
+import Stats from "https://unpkg.com/three@0.138.0/examples/jsm/libs/stats.module.js";
 
 let stats;
 
