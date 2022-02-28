@@ -24,6 +24,7 @@ let enemies = [];
 let ebulls = [];
 let eshootflag = 0;
 let score = 0;
+let deathflag = 0;
 
 let MAX_NUM_ENEMIES = 3;
 let MAX_NUM_TREASURES = 4;
@@ -32,6 +33,7 @@ let BULLETCOUNT = 10;
 const gameover = document.getElementById('gameover');
 const mytext = document.getElementById('mytext');
 const HUDtext = document.getElementById('HUDtext');
+const causetext = document.getElementById('cause');
 
 // function calls
 init();
@@ -180,10 +182,14 @@ function update()
 	{
 		ebull.update(time);
 	}
-	if (health <= 0)
+	if (health <= 0 && deathflag<1)
 	{
+		deathflag++;
 		gameover.style.display = 'block';
 		mytext.style.display = '';
+		HUDtext.style.display = 'none';
+		HUD.style.display = 'none';
+		causetext.innerHTML=causetext.innerHTML+" <br/> Score: "+score;
 	}
 	HUDtext.innerHTML = "Health: " + health + " | SCORE: " + score + " | Ammo: " + BULLETCOUNT;
 }
@@ -248,6 +254,23 @@ function collisions()
 				ebulls.splice(i, 1);
 				break;
 			}
+		}
+	}
+
+	// enemy - boat
+
+	for (let i = 0; i < enemies.length; i++)
+	{
+		if (enemies[i].enemyobj && boat.boatobj)
+		{
+			if (isColliding(enemies[i].enemyobj.children[0], enemies[i].enemyobj.position, boat.boatobj.children[0], boat.boatobj.position) && deathflag<1)
+			{
+				health -= 100;
+				console.log("enemy_collision", health);
+				causetext.innerHTML=causetext.innerHTML+" | Collided With Enemy";
+				break;
+			}
+
 		}
 	}
 

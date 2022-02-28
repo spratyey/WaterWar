@@ -1,6 +1,8 @@
 import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader.js";
 const loader = new GLTFLoader();
 import * as THREE from "three";
+import { activated } from "./inputs";
+
 
 // make the ebull class
 export default class Ebull
@@ -31,7 +33,7 @@ export default class Ebull
 	// updating rotation of the ebull based on received inputs
 	update(time)
 	{
-		if (this.ebullobj)
+		if (this.ebullobj && activated)
 		{
 			const direction = new THREE.Vector3();
 			this.ebullobj.children[0].getWorldDirection(direction);

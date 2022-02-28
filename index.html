@@ -24,8 +24,9 @@
 			align-items: center;
 
 			text-align: center;
-			font-size: 14px;
+			font-size: 12px;
 			cursor: pointer;
+			line-height: 16px;
 		}
 		#gameover {
 			display:none;
@@ -73,10 +74,10 @@
 <body>
 	<div id="blocker">
 		<div id="instructions">
-			<p style="font-size:36px">
+			<p style="font-size:24px">
 				WaterWar
 			</p>
-			<p style="font-size:24px">
+			<p style="font-size:18px">
 				Click to start
 			</p>
 			<p>
@@ -95,6 +96,9 @@
 			<p style="font-size:18px">
 				Made by <a href="https://github.com/spratyey">Pratyay Suvarnapathaki</a>
 			</p>
+			<p>
+				[Warning: Not optimized for mobile]
+			</p>
 		</div>
 	</div>
 	<div id="gameover">
@@ -104,6 +108,7 @@
 			</p>
 			<p style="font-size:24px">
 				Game Over
+				<p id="cause">Health Depleted</p>
 			</p>
 		</div>
 	</div>
