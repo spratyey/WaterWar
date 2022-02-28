@@ -11,7 +11,7 @@ export default class Enemy
 	// object constructor, initializes velo and rot to 0
 	constructor(scene, x, z)
 	{
-		loader.load("../assets/models/enemy/scene.gltf", (gltf) =>
+		loader.load("../myassets/models/enemy/scene.gltf", (gltf) =>
 		{
 			scene.add(gltf.scene);
 			gltf.scene.scale.set(8, 8, 8);

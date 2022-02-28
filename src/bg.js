@@ -15,7 +15,7 @@ function createbg()
 		textureWidth: 512,
 		textureHeight: 512,
 		waterNormals: new THREE.TextureLoader().load(
-			"assets/textures/waternormals.jpg",
+			"myassets/textures/waternormals.jpg",
 			function (texture)
 			{
 				texture.wrapS = texture.wrapT = THREE.RepeatWrapping;

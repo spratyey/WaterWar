@@ -8,7 +8,7 @@ export default class Boat
 	// object constructor, initializes velo and rot to 0
 	constructor(scene)
 	{
-		loader.load("../assets/models/watercraft/scene.gltf", (gltf) =>
+		loader.load("/../myassets/models/watercraft/scene.gltf", (gltf) =>
 		{
 			scene.add(gltf.scene);
 			gltf.scene.scale.set(0.5, 0.5, 0.5);

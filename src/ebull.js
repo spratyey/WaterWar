@@ -8,7 +8,7 @@ export default class Ebull
 	// object constructor, initializes velo and rot to 0
 	constructor(scene, x, z, rot, boatobj)
 	{
-		loader.load("../assets/models/ebullet/scene.gltf", (gltf) =>
+		loader.load("../myassets/models/ebullet/scene.gltf", (gltf) =>
 		{
 			scene.add(gltf.scene);
 			gltf.scene.scale.set(0.1, 0.1, 0.1);

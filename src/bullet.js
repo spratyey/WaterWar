@@ -8,7 +8,7 @@ export default class Bullet
 	// object constructor, initializes velo and rot to 0
 	constructor(scene, x, z, rot)
 	{
-		loader.load("../assets/models/treasure/scene.gltf", (gltf) =>
+		loader.load("../myassets/models/treasure/scene.gltf", (gltf) =>
 		{
 			scene.add(gltf.scene);
 			gltf.scene.scale.set(0.5, 0.5, 0.5);
